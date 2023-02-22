@@ -7,7 +7,10 @@ const port = 5001;
 // Connecting to the database
 connectToMongo();
 
-app.use(cors());
+// Setting up cors
+app.use(cors({
+    origin: '*'
+}));
 app.use(express.json());
 
 // Adding the routes
