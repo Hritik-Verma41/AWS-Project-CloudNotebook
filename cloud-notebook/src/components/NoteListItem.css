@@ -1,0 +1,101 @@
+#title-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#desc-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#desc {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0rem;
+}
+
+#date-div {
+    margin-bottom: 0.5rem;
+}
+
+#date-icon {
+    height: 1.2rem;
+    filter:  invert(20%);
+}
+
+#date {
+    margin-left: 0.3rem;
+}
+
+#view-note-btn {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+}
+
+#delete-btn {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    display: inline-flex;
+}
+
+#delete-icon {
+    align-self: center;
+    filter: invert(1);
+    width: 0.8rem;
+}
+
+@media screen and (max-width: 570px) {
+    #title {
+        font-size: 1.1rem;
+    }
+    #desc {
+        font-size: 0.85rem;
+    }
+    #date {
+        font-size: 0.725rem;
+    }
+    #date-icon {
+        height: 1rem;
+    }
+    #view-note-btn {
+        font-size: 0.6rem;
+    }
+    #delete-btn {
+        font-size: 0.6rem;
+    }
+    #delete-icon {
+        height: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #title {
+        font-size: 1rem;
+    }
+    #desc {
+        font-size: 0.75rem;
+    }
+    #date {
+        font-size: 0.625rem;
+    }
+    #date-icon {
+        height: 0.8rem;
+    }
+    #view-note-btn {
+        font-size: 0.5rem;
+    }
+    #delete-btn {
+        font-size: 0.5rem;
+    }
+    #delete-icon {
+        height: 0.8rem;
+    }
+}

@@ -1,0 +1,52 @@
+#login-primary {
+    margin-top: 3.5rem;
+}
+
+#login-primary-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form-container {
+    margin-top: 3rem;
+    width: 55%;
+    align-self: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media screen and (max-width: 1199px) {
+    #login-primary {
+        margin-top: 2.7rem;
+    }
+    #login-form-container {
+        width: 65.5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #login-primary {
+        margin-top: 2rem;
+    }
+    #login-form-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #login-primary {
+        margin-top: 1.2rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    #login-primary-content span {
+        width: 60%;
+    }
+}
+
+@media screen and (max-height: 840px) {
+    #login-form-container {
+        margin-bottom: 4rem;
+    }
+}

@@ -1,0 +1,207 @@
+#about-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin: auto;
+    padding: 1.5%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#about-app-div {
+    display: flex;
+    align-items: center;
+}
+
+#about-app-desc {
+    padding: 2%;
+    width: 57%;
+    font-size: 1.8rem;
+    border-right: 2px solid black;
+}
+
+#about-signup {
+    text-decoration: none;
+    color: black;
+}
+
+#about-app-logo {
+    padding: 2%;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+#about-app-logo img {
+    width: 54%;
+}
+
+#about-dev-div {
+    display: flex;
+    margin: 2.5% 0;
+    align-items: center;
+}
+
+#about-dev-logo {
+    padding: 2%;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+#about-dev-logo img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#about-dev-desc {
+    padding: 2%;
+    width: 57%;
+    font-size: 1.8rem;
+    border-left: 2px solid black;
+}
+
+#dev-name {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+#dev-qualification {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+#dev-college {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+#dev-section {
+    display: block;
+    margin: 2% 0;
+}
+
+#dev-handles {
+    margin-bottom: 0;
+}
+
+#dev-handles-div a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    display: block;
+}
+
+#dev-handles-div a:hover {
+    color: rgb(80, 80, 80);
+}
+
+#dev-handles-div i {
+    width: 1.4rem;
+    margin-right: 1.2%;
+}
+
+@media screen and (max-width: 935px) {
+    .about-title {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    #about-app-desc {
+        font-size: calc(0.675rem + 1.5vw);
+    }
+    #dev-name {
+        font-size: calc(1.075rem + 1.5vw);
+    }
+    #dev-qualification {
+        font-size: calc(0.475rem + 1.5vw);
+    }
+    #dev-college {
+        font-size: calc(0.475rem + 1.5vw);
+    }
+    #dev-handles {
+        font-size: calc(0.675rem + 1.5vw);
+    }
+    #dev-handles-div a {
+        font-size: calc(0.375rem + 1.5vw);
+    }
+    #dev-handles-div i {
+        width: calc(0.375rem + 1.5vw);
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .about-title {
+        font-size: calc(1.175rem + 1.5vw);
+    }
+    #about-app-desc {
+        font-size: calc(0.475rem + 1.5vw);
+    }
+    #dev-name {
+        font-size: calc(0.875rem + 1.5vw);
+    }
+    #dev-qualification {
+        font-size: calc(0.275rem + 1.5vw);
+    }
+    #dev-college {
+        font-size: calc(0.275rem + 1.5vw);
+    }
+    #dev-handles {
+        font-size: calc(0.475rem + 1.5vw);
+    }
+    #dev-handles-div a {
+        font-size: calc(0.175rem + 1.5vw);
+    }
+    #dev-handles-div i {
+        width: calc(0.175rem + 1.5vw);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .about-title {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    #about-app-desc {
+        font-size: calc(0.675rem + 1.5vw);
+    }
+    #dev-name {
+        font-size: calc(1.075rem + 1.5vw);
+    }
+    #dev-qualification {
+        font-size: calc(0.475rem + 1.5vw);
+    }
+    #dev-college {
+        font-size: calc(0.475rem + 1.5vw);
+    }
+    #dev-handles {
+        font-size: calc(0.675rem + 1.5vw);
+    }
+    #dev-handles-div a {
+        font-size: calc(0.375rem + 1.5vw);
+    }
+    #dev-handles-div i {
+        width: calc(0.375rem + 1.5vw);
+    }
+    #about-app-div {
+        flex-direction: column;
+    }
+    #about-app-desc {
+        border: none;
+        width: 83%;
+    }
+    #about-app-logo {
+        width: 83%;
+    }
+    #about-dev-div {
+        margin-top: 4%;
+        flex-direction: column-reverse;
+    }
+    #about-dev-desc {
+        border: none;
+        width: 83%;
+    }
+    #about-dev-logo {
+        width: 83%;
+    }
+}

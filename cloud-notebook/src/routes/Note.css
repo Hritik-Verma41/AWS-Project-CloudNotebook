@@ -1,0 +1,261 @@
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 0.4rem;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgba(163, 163, 163, 0.582); 
+    border-radius: 0.4rem;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(68, 68, 68, 0.582); 
+}
+
+#note-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    min-height: 94vh;
+}
+
+#note-primary {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+#note-main-container {
+    height: 89vh;
+    border-radius: 1rem;
+    padding: 2rem 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#note-title-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#note-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.8rem;
+}
+
+#note-date-div {
+    margin-bottom: 0.5rem;
+}
+
+#note-date {
+    font-size: 1.05rem;
+    margin-left: 0.3rem;
+}
+
+#note-date-icon {
+    height: 1.3rem;
+    filter:  invert(20%);
+}
+
+#note-delete-icon {
+    align-self: center;
+    filter: invert(1);
+    width: 0.8rem;
+}
+
+#note-delete-btn {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0.2rem 0;
+}
+
+#section-hr {
+    margin: 0.6rem 0;
+    display: block;
+}
+
+#note-desc-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#note-desc {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.58rem;
+}
+
+#note-body {
+    height: 77.9%;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-height: 900px) {
+    #note-body {
+        height: 75.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #note-body {
+        height: 77%;
+    }
+    #note-title {
+        font-size: 1.6rem;
+    }
+    #note-date-icon {
+        height: 1.1rem;
+    }
+    #note-date {
+        font-size: 0.85rem;
+    }
+    #note-delete-icon {
+        width: 0.7rem;
+    }
+    #note-delete-btn {
+        font-size: 0.7rem;
+    }
+    #note-desc {
+        font-size: 1.38rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #note-title {
+        font-size: 1.4rem;
+    }
+    #note-date-icon {
+        height: 1rem;
+    }
+    #note-date {
+        font-size: 0.75rem;
+    }
+    #note-delete-icon {
+        width: 0.6rem;
+    }
+    #note-delete-btn {
+        font-size: 0.6rem;
+    }
+    #note-desc {
+        font-size: 1.18rem;
+    }
+    #note-body {
+        font-size: 0.8rem;
+        height: 78.6%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #note-title {
+        font-size: 1.2rem;
+    }
+    #note-desc {
+        font-size: 0.98rem;
+    }
+    #note-body {
+        height: 79.6%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #note-title {
+        font-size: 1rem;
+    }
+    #note-desc {
+        font-size: 0.92rem;
+    }
+    #note-body {
+        height: 80.3%;
+    }
+}
+
+@media screen and (max-height: 820px) {
+    #note-main-container {
+        height: 87vh;
+    }
+    #note-body {
+        height: 73.6%;
+    }
+}
+
+@media screen and (max-height: 810px) {
+    #note-main-container {
+        height: 86vh;
+    }
+    #note-body {
+        height: 73.1%;
+    }
+}
+
+@media screen and (max-height: 790px) {
+    #note-main-container {
+        height: 85vh;
+    }
+    #note-body {
+        height: 72.1%;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    #note-main-container {
+        height: 84vh;
+    }
+    #note-body {
+        height: 69.9%;
+    }
+}
+
+@media screen and (max-height: 710px) {
+    #note-body {
+        height: 68%;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    #note-body {
+        height: 66%;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    #note-body {
+        height: 64%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    #note-body {
+        height: 61.4%;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    #note-main-container {
+        height: 83vh;
+    }
+    #note-body {
+        height: 58.4%;
+    }
+}
+
+@media screen and (max-height: 542px) {
+    #note-main-container {
+        height: 81vh;
+    }
+    #note-body {
+        height: 54.6%;
+    }
+}

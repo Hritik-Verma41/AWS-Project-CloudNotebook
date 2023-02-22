@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap');
+
+#home-primary {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7rem;
+    width: 80%;
+}
+
+#home-primary-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#home-primary-content h1 {
+    font-size: 4rem;
+}
+
+#home-primary-content p {
+    width: 80%;
+    font-size: 1.5rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#home-primary-content p span {
+    font-weight: bold;
+}
+
+#home-logo-content {
+    width: 40%;
+    margin-left: 1rem;
+}
+
+#home-logo-content img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    #home-primary {
+        margin-top: 4rem;
+    }
+    #home-primary-content p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1197px) {
+    #home-primary {
+        margin-top: 5rem;
+    }
+    #home-primary-content {
+        width: 70%;
+    }
+    #home-logo-content {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    #home-primary {
+        margin-top: 3.7rem;
+    }
+    #home-primary-content {
+        width: 75%;
+    }
+    #home-primary-content p {
+        width: 100%;
+    }
+    #home-logo-content {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    #home-primary {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 85%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    #home-logo-content {
+        width: 58%;
+    }
+    #home-primary-content {
+        width: 100%;
+        text-align: center;
+    }
+    #home-primary-content h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    #home-logo-content p {
+        font-size: calc(1.275rem + .3vw);
+    }
+    #btn-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #btn-container button {
+        width: 95%;
+        margin: 0.2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    #home-primary-content h1 {
+        font-size: calc(1.525rem + 2.7vw);
+        width: 100%;
+    }
+    #home-primary-content p {
+        font-size: calc(1.275rem + .3vw);
+        width: 100%;
+    }
+}
