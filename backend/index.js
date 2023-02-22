@@ -18,8 +18,8 @@ app.use(express.json());
 app.get('/api', (req, res) => {
     res.json({message : 'Welcome to cloud notebook api'});
 });
-app.use('/auth', require('./routes/auth'));
-app.use('/notes', require('./routes/notes'));
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/notes', require('./routes/notes'));
 
 // Starting the server
 app.listen(port, () => {

@@ -23,7 +23,7 @@ function AddNewNoteModal() {
                 },
                 body: JSON.stringify(data)
             };
-            await fetch('http://localhost:5001/notes/addnote', requestOptions);
+            await fetch('/api/notes/addnote', requestOptions);
         } catch(err) {
             console.log(err);
         }

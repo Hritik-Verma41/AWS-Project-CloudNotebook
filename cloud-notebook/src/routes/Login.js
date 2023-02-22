@@ -39,7 +39,7 @@ function Login() {
             body: JSON.stringify(data)
         };
         try {
-            let response = await fetch('http://localhost:5001/auth/login', requestOptions);
+            let response = await fetch('/api/auth/login', requestOptions);
             localStorage.setItem('auth-token', response.headers.get('auth-token'));
             if(response.status === 200) {
                 loggedInState.setLoggedIn(true);
