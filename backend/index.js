@@ -15,7 +15,7 @@ app.use(cors({
 app.use(express.json());
 
 // Adding the routes
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json({message : 'Welcome to cloud notebook api'});
 });
 app.use('/auth', require('./routes/auth'));
