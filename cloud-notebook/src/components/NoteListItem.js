@@ -44,7 +44,7 @@ function NoteListItem(props) {
                     <img id="date-icon" src={dateIcon} alt="No preview!" />
                     <span id="date" className="form-text">{new Date(props.note.date).toLocaleString({timeZone: 'Asia/Kolkata'})}</span>
                 </div>
-                <Link to={`/notes/note=${props.note._id}`} id="view-note-btn" className="btn btn-outline-danger">View Note</Link>
+                <Link to={`/notes/${props.note._id}`} id="view-note-btn" className="btn btn-outline-danger">View Note</Link>
                 <button disabled={deleting} id="delete-btn" className='btn btn-danger mx-2' onClick={deleteNoteHandler} ><img id="delete-icon" src={deleteIcon} alt="No preview icon!" />&nbsp;{deleting?'Deleting':'Delete'}</button>
             </div>
         </div>

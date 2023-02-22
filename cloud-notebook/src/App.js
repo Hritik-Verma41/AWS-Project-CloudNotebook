@@ -47,7 +47,7 @@ function App() {
                   <Notes/>
                 </AuthGuard>
               } />
-              <Route exact path='/notes/note=:id' element={
+              <Route exact path='/notes/:id' element={
                 <AuthGuard>
                   <Note/>
                 </AuthGuard>
