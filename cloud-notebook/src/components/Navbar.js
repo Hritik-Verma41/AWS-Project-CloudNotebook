@@ -43,7 +43,7 @@ function Navbar() {
                     'auth-token': localStorage.getItem('auth-token')
                 }
             };
-            fetch('http://localhost:5001/auth/getuser', requestOptions)
+            fetch('/api/auth/getuser', requestOptions)
                 .then(response => {
                     response.json().then(data => {
                         userNameStates.setUserFirstName(data.first_name);

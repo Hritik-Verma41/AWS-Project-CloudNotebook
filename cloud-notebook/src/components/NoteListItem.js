@@ -21,7 +21,7 @@ function NoteListItem(props) {
                     'auth-token': localStorage.getItem('auth-token')
                 }
             };
-            await fetch(`http://localhost:5001/notes/deletenote/${props.note._id}`, requestOptions);
+            await fetch(`/api/notes/deletenote/${props.note._id}`, requestOptions);
         } catch(err) {
             alertStates.setErrorCode(500);
             alertStates.setAlertMessage("Can't connect to the server!");

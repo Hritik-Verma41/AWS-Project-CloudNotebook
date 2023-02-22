@@ -29,7 +29,7 @@ function Note() {
                         'auth-token': localStorage.getItem('auth-token')
                     }
                 };
-                let response = await fetch(`http://localhost:5001/notes/getnote/${id}`, requestOptions);
+                let response = await fetch(`/api/notes/getnote/${id}`, requestOptions);
                 if(response.status !== 200) {
                     setLoading(false);
                     setNotFound(true);
@@ -57,7 +57,7 @@ function Note() {
                     'auth-token': localStorage.getItem('auth-token')
                 }
             };
-            let response = await fetch(`http://localhost:5001/notes/deletenote/${note._id}`, requestOptions);
+            let response = await fetch(`/api/notes/deletenote/${note._id}`, requestOptions);
             if(response.status === 200) {
                 navigate('/notes');
             }

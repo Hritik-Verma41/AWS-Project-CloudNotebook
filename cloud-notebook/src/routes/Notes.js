@@ -27,7 +27,7 @@ function Notes() {
                         'auth-token': localStorage.getItem('auth-token')
                     }
                 };
-                let response = await fetch(`http://localhost:5001/notes/getnotes?page=${page}`, requestOptions);
+                let response = await fetch(`/api/notes/getnotes?page=${page}`, requestOptions);
                 await response.json().then(data => {
                     setNotes(data.notes);
                     setTotalResults(data.totalResults);
@@ -52,7 +52,7 @@ function Notes() {
             }
         };
         try {
-            let response = await fetch(`http://localhost:5001/notes/getnotes?page=${page+1}`, requestOptions);
+            let response = await fetch(`/api/notes/getnotes?page=${page+1}`, requestOptions);
             setPage(page+1);
             await response.json().then(data => {
                 let newNotes = notes.concat(data.notes);

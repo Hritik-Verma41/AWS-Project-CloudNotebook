@@ -21,7 +21,7 @@ function EditDescModal(props) {
                 },
                 body: JSON.stringify(data)
             };
-            await fetch(`http://localhost:5001/notes/updatedescription/${props.id}`, requestOptions);
+            await fetch(`/api/notes/updatedescription/${props.id}`, requestOptions);
         } catch(err) {
             console.log(err);
         }
