@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AuthGuard from './components/AuthGuard';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
-import About from './routes/About';
 import Home from './routes/Home';
 import Login from './routes/Login';
 import Notes from './routes/Notes';
@@ -39,7 +38,6 @@ function App() {
             {displayAlert && <Alert errorCode={errorCode} message={alertMessage} />}
             <Routes>
               <Route exact path='/' element={<Home/>} />
-              <Route exact path='/about' element={<About/>} />
               <Route exact path='/login' element={<Login/>} />
               <Route exact path='/signup' element={<Signup/>} />
               <Route exact path='/notes' element={

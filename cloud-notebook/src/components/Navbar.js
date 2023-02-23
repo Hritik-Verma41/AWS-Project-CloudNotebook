@@ -73,9 +73,6 @@ function Navbar() {
                 <li className="nav-item">
                 <Link className={`nav-link ${path==='/notes'?'active':''}`} to="/notes">Notes</Link>
                 </li>
-                <li className="nav-item">
-                <Link className={`nav-link ${path==='/about'?'active':''}`} to="/about">About</Link>
-                </li>
             </ul>
             {loggedInState.loggedIn && <><hr/><span id="user-name-span" className="navbar-brand">{`${userNameStates.userFirstName} ${userNameStates.userLastName}`}</span></>}
             <div id='sigin-up-btn-div'>
